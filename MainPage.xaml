@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cleanApp="clr-namespace:CleanApp"
+             x:Class="CleanApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            BackgroundColor="LightBlue"
+            Padding="30,0"
+            Spacing="25">
+                <Entry x:Name="Entrytest"
+                      WidthRequest="150"
+                      Text=""
+                      BackgroundColor="Chartreuse"
+                      HorizontalOptions="End"/>
+                <cleanApp:UnmodifiedEntry x:Name="UnmodifiedEntryTest"
+                                     WidthRequest="150"
+                                     BackgroundColor="Chartreuse"
+                                     Text=""
+                                     HorizontalOptions="End"/>
+            <HorizontalStackLayout x:Name="UnmodifiedEntryLayout"
+                                   HorizontalOptions="Fill"
+                                  BackgroundColor="Violet"
+                                  Spacing="10">
+                <Label x:Name="UnmodifiedEntryLabel"
+                          Text="Unmodified Entry"
+                          HorizontalOptions="Start"
+                          VerticalOptions="Center"
+                          BackgroundColor="Azure"
+                          FontSize="16" />
+                <cleanApp:UnmodifiedEntry x:Name="UnmodifiedEntry"
+                                      WidthRequest="150"
+                                      Text=""
+                                      HorizontalOptions="End"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout x:Name="EntryLayout"
+                       HorizontalOptions="Fill"
+                       BackgroundColor="Bisque"
+                       Spacing="10">
+                <Label x:Name="EntryLabel"
+                      Text="Regular Entry"
+                      HorizontalOptions="Start"
+                      VerticalOptions="Center"
+                      BackgroundColor="LightCyan"
+                      FontSize="16" />
+                <Entry x:Name="Entry"
+                                         WidthRequest="150"
+                                         Text=""
+                                         HorizontalOptions="End"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
